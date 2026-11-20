@@ -1,2 +1,14 @@
-# Ederango_EventRegistrationFormatter
-Event registration with clan full name and clean event details and says what string feature i used.
+first_name = str(input("Enter your first name: "))
+last_name = str(input("Enter your last name:"))
+section = str(input("Enter your section: "))
+event = str(input("Enter the event name or title: "))
+event_year = str(input("What year did/does the event start? "))
+event_month = str(input("What month did/does the event start? "))
+event_date = str(input("What date did/does the event start? "))
+print("First name: ",first_name)
+print("Last name: ",last_name)
+print("Section: ",section)
+print("Event: ",event)
+print("Year: ",event_year)
+print("Month: ",event_month)
+print("Day: ", event_date)
