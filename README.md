@@ -7,17 +7,19 @@ event_month = int(input("What month did/does the event start?(1 to 12, as in 1 a
 event_date = int(input("What date did/does the event start? "))
 months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 def proper_full(first_name, last_name):
-    print(first_name.capitalize(), last_name.capitalize())
+    print("Name: ",first_name.capitalize(), last_name.capitalize())
 def proper_code(firstname, lastname):
-    print(firstname.upper(), lastname.upper())
+    print("Name Code: ",firstname.upper(), lastname.upper())
 def section_full(section):
-    print(section.upper())
+    print("Section: ",section.upper())
 def event_format(event):
-    print(event.capitalize())
+    print("Event or title: ",event.capitalize())
+def event_date_format(month, date, year):
+    print("Event date: ",months[month], date, year)
+print("--- Student Event Registration Summary ---")
 proper_full(first_name, last_name)
 proper_code(first_name, last_name)
 section_full(section)
 event_format(event)
-print("Year: ",event_year)
-print("Month: ",event_month)
-print("Day: ",event_date)
+event_date_format(event_month - 1, event_date, event_year)
+print("Registration record created successfully.")
